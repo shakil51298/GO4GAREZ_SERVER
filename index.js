@@ -39,6 +39,7 @@ client.connect(err => {
                 res.send(serviceDocs)
             })
     })
+    
     // delete services
     app.delete('/delete/service/:id', (req, res) => {
         const id = ObjectID(req.params.id)
